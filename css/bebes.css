@@ -1,0 +1,750 @@
+@charset "utf-8";
+
+#form h3, #quienes p{
+	color: #03283D!important;
+}
+
+#paralax section{
+	background-color: #94EDED;
+	background-image: url("../imagenes/bbf4.png");
+}
+#contNeuronasFix{
+	position: fixed;
+	z-index: 2;
+	width: 1000px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content:center;
+	align-items:center;
+	bottom: 0;
+}
+.secNeuronas{
+	position: relative;
+	width: 100%;
+	height: 800px;
+}
+/*fin diseño secciones*/
+/*inicio diseño elementos de cada escenario*/
+
+#escenario1{
+background-image: url("../imagenes/bbf1.png");
+
+}
+#escenario2{
+background-image: url("../imagenes/bbf2.png");
+}
+#escenario3{
+background-image: url("../imagenes/bbf3.png");
+}
+#escenario4{
+background-image: url("../imagenes/bbf4.png");
+}
+#escenario5{
+background-image: url("../imagenes/bbf1.png");
+}
+#escenario6{
+background-image: url("../imagenes/bbf2.png");
+}
+#escenario7{
+background-image: url("../imagenes/bbf3.png");
+}
+#escenario8{
+background-image: url("../imagenes/bbf4.png");
+}
+#escenario9{
+background-image: url("../imagenes/bbf1.png");
+
+}
+
+/*fin diseño de cada elemento*/
+/* fin diseños especiales */
+
+/* brazo neurona*/
+#brazoNeurona{
+	position: fixed;
+	left: 40%;	
+	bottom: -60px;
+	transform: translateX(-60%);
+	background-image: url(../imagenes/brazoneurona2.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 75px;
+	height: 260px;
+	z-index: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items:center;
+}
+
+@keyframes apuntadora {
+	 0%   { color: rgba(255,255,255,0.8); }
+
+    25%  { color: rgba(255,255,255,0); text-shadow: none;}
+
+    50% { color: rgba(255,255,255,0.8); }
+
+    100% { color: rgba(255,255,255,0.8); } 
+}
+@keyframes apuntadorb {
+	 0%   { color: rgba(255,255,255,0.8); }
+
+	 25%   { color: rgba(255,255,255,0.8); }
+
+    50%  { color: rgba(255,255,255,0); text-shadow: none; }
+
+    75% { color: rgba(255,255,255,0.8); }
+
+    100% { color: rgba(255,255,255,0.8); }
+}
+@keyframes apuntadorc {
+	 0%   { color: rgba(255,255,255,0.8); }
+	 
+
+    50%  { color: rgba(255,255,255,0.8); }
+    
+    75% { color: rgba(255,255,255,0); text-shadow: none; } 
+
+    100% { color: rgba(255,255,255,0.8); }
+}
+
+
+.apuntador{
+	transform: rotate(90deg);
+	position: relative;
+	height: 30px;
+	width: 20px;	
+	top: -80px;
+	right: -10px;
+	margin: 0px;
+	font-size: 2.5em;
+	text-align: right;
+	font-family: 'Handlee', cursive;
+	color: rgba(255,255,255,0.8);
+	text-shadow: 0px 0px 5px white;
+}
+
+#apuntador1{
+	animation: apuntadora 1s linear  infinite ;
+}
+#apuntador2{
+	animation: apuntadorb 1s linear  infinite ;
+}
+#apuntador3{
+	animation: apuntadorc 1s linear  infinite ;
+}
+/*fin brazo*/
+
+
+.neuronasEstaciones{
+	position: relative;
+	width:400px;
+	height: 400px;
+	top: 100px;
+	left: 150px;
+	z-index: 2;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content:center;
+	align-items:center;	
+	font-family: 'Handlee', cursive;
+	font-size: 1.5em;
+	background-repeat: no-repeat;
+	background-size: 200%;
+	background-position: center center;
+	flex-flow: column nowrap;
+	border-radius: 50%;
+}
+@keyframes estaciones {
+    0%   { transform: scale(1,1);}
+
+    50%  { transform: scale(0.5 , 0.5);}
+
+    100% { transform: scale(1,1);}; 
+}
+
+.animaEstacion{
+	animation: estaciones 2s linear infinite ;
+	content: none;
+}
+
+.animaEstacion *{
+	display: none;
+}
+
+.neuronasEstaciones h1{
+	margin:2% auto;
+	text-align: center;
+}
+
+@keyframes botonMas {
+    0%   {background-color: white;box-shadow: 0px 0px 10px 0px lightgray;}
+
+    50%  {background-color: #FFFAC2;box-shadow: 0px 0px 10px 0px #FFEA00;}
+
+    100% {background-color: white;box-shadow: 0px 0px 10px 0px lightgray;}
+}
+
+.mas{
+	font-family: 'Handlee', cursive;
+	padding: 0px;
+	background-color: white;
+	color: #FF5F7D;
+	text-align: center;
+	border-radius: 25px;
+	margin: 0px;
+	cursor: pointer;
+	animation: botonMas 2s linear infinite alternate;
+}
+
+.mas:hover{
+	background-color: #FFF600;
+}
+
+.masEstacion{
+	width: 100px;
+	height: 50px;
+	font-size: 2em;
+}
+
+.masDesarrollo{
+	width: 60px;
+	height: 40px;
+	font-size: 1.5em;
+}
+
+#neuronaEstacion1{
+	color: #841ac1;
+	background-image: url(../imagenes/neuronamorada.svg) ;
+}
+
+#neuronaEstacion2{
+	color: #841ac1;
+	background-image: url(../imagenes/neuronaamarillo.svg) ;
+}
+
+#neuronaEstacion3{
+	color: #841ac1;
+	background-image: url(../imagenes/neuronaroja.svg) ;
+}
+#neuronaEstacion4{
+	color: #841ac1;
+	background-image: url(../imagenes/neuronaverde.svg) ;
+}
+
+.neuronasDesarrollo{
+	overflow: hidden;
+	width: 160px;
+	height:160px;
+	position: absolute;
+	font-family: 'Handlee', cursive;
+	font-size: 1.5em;
+	color: #086a96;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	z-index: 5;
+	flex-flow: column nowrap;
+	padding:10%;
+
+}
+.neuronasDesarrollo:before{
+content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  	background-repeat: no-repeat;
+	background-size: 50% 50%;
+	background-position: center center;
+ 
+}
+
+.tituloDesarrollo{
+	margin: 0px;
+	
+}
+
+
+#nDes1Est1:before {
+  background-image: url(../imagenes/neuronaazul.svg);
+}
+
+#nDes2Est1:before {
+  background-image: url(../imagenes/neuronaroja.svg);
+}
+
+#nDes3Est1:before {
+  background-image: url(../imagenes/neuronaverde.svg);
+}
+
+#nDes1Est2:before {
+  background-image: url(../imagenes/neuronanaranja.svg);
+}
+
+#nDes2Est2:before {
+  background-image: url(../imagenes/neuronamorada.svg);
+}
+
+#nDes1Est3:before {
+  background-image: url(../imagenes/neuronanaranja.svg);
+}
+
+#nDes2Est3:before {
+  background-image: url(../imagenes/neuronamorada.svg);
+}
+
+#nDes1Est4:before {
+  background-image: url(../imagenes/neuronanaranja.svg);
+}
+
+#nDes2Est4:before {
+  background-image: url(../imagenes/neuronamorada.svg);
+}
+
+.neuDesUp{
+	top: -40px;
+  left: 510px;
+
+}
+
+.neuDesMiddle{
+	top: 70px;
+  left: 730px;
+
+}
+.neuDesMiddle:before{
+-webkit-transform: rotate(-75deg);
+  -moz-transform: rotate(-75deg);
+  -ms-transform: rotate(-75deg);
+  -o-transform: rotate(-75deg);
+  transform: rotate(-75deg);
+	}
+
+.neuDesBottom{
+	top: 360px;
+  left: 640px;
+
+}
+.neuDesBottom:before{
+	  -webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+
+
+.alcanzaDesarrollo{
+	background-image: url(../imagenes/brazoalcanza.svg);
+	position: absolute;
+	width: 55px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content:center;
+	align-items:center;	
+	-webkit-transform-origin: center top;
+	-moz-transform-origin: center top;
+	-ms-transform-origin: center top;
+	-o-transform-origin: center top;
+	transform-origin: center top;
+	top:300px;
+	left:350px;
+	
+}
+.desarrolla{
+	width: auto;
+	height: auto;
+	text-align: center;
+	top:-10px;
+	padding: 5px;
+	font-family: 'Handlee', cursive;
+	font-size: 1.5em;
+	color: #59055A;
+	transform: rotate(90deg);
+	position: relative;
+}
+.alcDesUp{
+
+transform: rotate(-140deg);
+height: 400px;
+
+}
+.alcDesmiddle{
+
+transform: rotate(-105deg);
+height: 550px;
+
+}
+.alcDesBottom{
+
+transform: rotate(-65deg);
+height: 400px;	
+}
+
+#contExplicacion{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	z-index: 20;
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	border-radius: 25px;
+	box-shadow: 0px 0px 15px 0px lightgray;
+	display: none;
+
+}
+
+#bntCerrar{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-image: url(../imagenes/cerrar.png);
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-position: center center;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	margin:10px;
+}
+#textExplicacion{
+	font-family: 'Handlee', cursive;
+	margin: 100px 30px 10px 30px;
+	text-align: justify;
+	font-size: 1.3em;
+}
+
+/*DISEÑO RESPONSIVE*/
+@media screen and (max-width: 900px) {
+
+#contNeuronasFix{
+	width: 700px;
+}
+#brazoNeurona{
+	
+	left: 35%;	
+	transform: translateX(-65px);
+	bottom: -40px;
+	width: 52px;
+	height: 182px;
+
+}
+.neuronasEstaciones{
+	width:280px;
+	height:280px;
+	top: 200px;
+	left: 50px;
+	font-size: 1em;
+}
+
+.masEstacion{
+	width: 70px;
+	height: 35px;
+	font-size: 2em;
+}
+
+.masDesarrollo{
+	width: 50px;
+	height: 20px;
+	font-size: 1em;
+	transform: translateY(-5px);
+}
+.neuronasDesarrollo{
+
+	width: 112px;
+	height:112px;
+	font-size: 1em;
+
+}
+
+.neuDesUp{
+	top: 120px;
+  left: 320px;
+
+}
+.neuDesMiddle{
+	top: 180px;
+  left: 490px;
+
+}
+.neuDesBottom{
+	top: 400px;
+  left: 380px;
+
+}
+.alcanzaDesarrollo{
+
+	width: 45px;
+	top:370px;
+	left:150px;
+	
+}
+.desarrolla{
+	font-size: 1.2em;
+	top: 20px;
+}
+.alcDesUp{
+
+transform: rotate(-135deg);
+height: 320px;
+
+}
+.alcDesmiddle{
+
+transform: rotate(-105deg);
+height: 450px;
+
+}
+.alcDesBottom{
+
+transform: rotate(-70deg);
+height: 300px;	
+}
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+#contNeuronasFix{
+	width: 500px;
+}
+#brazoNeurona{
+	
+	left: 33%;	
+	transform: translateX(-67px);
+	bottom: -30px;
+	width: 35px;
+	height: 130px;
+}
+.apuntador{
+	height: 25px;
+	width: 20px;	
+	top: -40px;
+	right: 	-7px;
+	margin: 0px;
+	font-size: 2em;
+}
+.neuronasEstaciones{
+	width:200px;
+	height:200px;
+	top: 350px;
+	left: 10px;
+	font-size: 0.75em;
+}
+
+
+.masEstacion{
+	width: 60px;
+	height: 25px;
+	font-size: 2em;
+}
+
+.masDesarrollo{
+	width: 30px;
+	height: 15px;
+	font-size: 0.8em;
+	
+}
+.neuronasDesarrollo{
+
+	width: 90px;
+	height:90px;
+	font-size: 0.8em;
+
+}
+
+.neuDesUp{
+	top: 290px;
+  left: 210px;
+
+}
+.neuDesMiddle{
+	top: 350px;
+  left: 350px;
+
+}
+.neuDesBottom{
+	top: 470px;
+  left: 260px;
+
+}
+.alcanzaDesarrollo{
+
+	width: 30px;
+	top: 450px;
+	left: 90px;
+	
+}
+.desarrolla{
+	font-size: 1em;
+	top:5px;
+}
+.alcDesUp{
+
+transform: rotate(-130deg);
+height: 220px;
+
+}
+.alcDesmiddle{
+
+transform: rotate(-100deg);
+height: 330px;
+
+}
+.alcDesBottom{
+
+transform: rotate(-70deg);
+height: 220px;	
+}
+
+#contExplicacion{
+
+	width: 300px;
+	height: 300px;
+
+}
+
+#bntCerrar{
+
+	width: 20px;
+	height: 20px;
+
+}
+#textExplicacion{
+
+	margin: 50px 30px 10px 30px;
+	font-size: 1em;
+}
+}
+@media screen and (max-width: 479px) {
+
+#contNeuronasFix{
+	width: 310px;
+}
+#brazoNeurona{
+	
+	left: 45%;	
+	transform: translateX(-55px);
+	bottom: -40px;
+	width: 50px;
+	height: 205px;
+}
+.neuronasEstaciones{
+
+	left: 0px;
+	font-size: 0.75em;
+}
+
+
+.masEstacion{
+	width: 60px;
+	height: 25px;
+	font-size: 2em;
+}
+
+.masDesarrollo{
+	width: 35px;
+	height: 20px;
+	font-size: 1.2em;
+	
+}
+.neuronasDesarrollo{
+
+	width: 100px;
+	height:100px;
+	font-size: 1.1em;
+
+}
+
+.neuDesUp{
+	top: 190px;
+  left: 0px;
+
+}
+.neuDesMiddle{
+	top: 165px;
+  left: 120px;
+
+}
+.neuDesBottom{
+	top: 260px;
+  left: 210px;
+
+}
+.alcanzaDesarrollo{
+
+	width: 35px;
+	top:470px;
+	left: 80px;
+	
+}
+.desarrolla{
+	font-size: 1em;
+	top: 15px;
+}
+.alcDesUp{
+
+transform: rotate(165deg);
+height: 250px;
+
+}
+.alcDesmiddle{
+
+transform: rotate(-165deg);
+height: 300px;
+
+}
+.alcDesBottom{
+
+transform: rotate(-135deg);
+height: 230px;	
+}
+
+#contExplicacion{
+
+	width: 300px;
+	height: 350px;
+
+}
+
+#bntCerrar{
+
+	width: 30px;
+	height: 30px;
+
+}
+
+#textExplicacion{
+
+	font-size: 1.2em;
+}
+
+}

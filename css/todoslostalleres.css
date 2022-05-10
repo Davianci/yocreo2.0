@@ -1,0 +1,589 @@
+@charset "utf-8";
+
+body, html{
+	border: 0px;
+	margin: auto 0px;
+	position: relative;
+}
+#paralax{
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content:center;
+	align-items:center;
+	position: fixed;
+	bottom: 0;
+
+}
+/*diseño de las secciones*/
+section{
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+	background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border:0px;
+    margin:0px;
+}
+
+
+/*fin diseño secciones*/
+/*inicio diseño elementos de cada escenario*/
+.escenarios{
+	z-index:2;
+	width: 100%;
+	height: 120%;
+	margin: 0 auto;
+	background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: 100%;
+border:0px;
+
+}
+
+
+/*fin diseño de cada elemento*/
+/*clase para las capas que están fijas en la web*/
+.fijas{
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	
+}
+
+/*inicio diseño textos*/
+#informacion{
+
+	max-width: 500px;
+	width: 90%;
+	max-height: 130px; 
+	height: 40%;
+	z-index: 8;
+	right: 7%;
+}
+article{
+	position: absolute;
+	z-index: 8;
+	margin:0 auto;
+	font-family: 'Handlee', cursive;
+	font-size: 1em;
+	width: 94%;
+	display: none;
+	padding: 3%;
+	top:40px;
+}
+#infoescenario1{
+	background-color: rgba(121,220,255,1);
+	color: #012D3D;
+}
+#infoescenario2{
+	background-color: rgba(255,196,30,1);
+	color: #403516;
+}
+#infoescenario3{
+	background-color: rgba(107,255,149,1);
+	color: #003D11;
+}
+#infoescenario4{
+	background-color: rgba(121,220,255,1);
+	color: #012D3D;
+}
+#infoescenario5{
+	background-color: rgba(255,215,0,1);
+	color: #3D3A0A;
+}
+#infoescenario6{
+	background-color: rgba(36,255,13,1);
+	color: #153D0B;
+}
+#infoescenario7{
+	background-color: rgba(118,0,148,1);
+	color: #FDDDFF;
+}
+#infoescenario8{
+	background-color: rgba(255,215,0,1);
+}
+#infoescenario9{
+	background-color: rgba(255,215,0,1);
+	color: #3D3A0A;
+}
+#despegue{
+	position: fixed;
+	bottom: 80px;
+	background-color:white;
+	padding: 5px;
+	border-radius: 15px;
+	font-family: 'Indie Flower';
+	font-size: 1.5em;
+	left: 40%;
+	z-index: 13;
+	color: red;
+	opacity: 0;
+}
+#avanza{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	left: 45%;
+	bottom: 15px;
+	margin: 0 auto;
+	border-radius: 50px;
+	background-color: white;
+	transform: rotate(-90deg);
+	font-size: 3em;
+	
+	font-family: 'Indie Flower';
+	font-weight: bold;
+	text-align: center;
+	z-index: 15;
+	cursor: pointer;
+	overflow: hidden;
+	color:#FD720C;
+}
+@keyframes animado{
+	0%, 15%{right:-50px;}
+	25%, 90%{right:0px;}
+	100%{right:50px;}
+}
+
+#apuntador{
+	width: inherit;
+	height: inherit;
+	
+	-webkit-animation: animado 5s infinite  ;
+	-o-animation: animado 5s infinite  ;
+	-moz-animation: animado 5s infinite  ;
+	animation: animado 5s infinite  ;
+	position: relative;
+		-webkit-transform: translateY(-25%);
+	   -moz-transform: translateY(-25%);
+	    -ms-transform: translateY(-25%);
+	     -o-transform: translateY(-25%);
+	        transform: translateY(-25%);
+}
+#avanza:hover{
+background-color: rgba(255,255,91,1);
+color:#E01431;
+}
+	
+
+/*fin diseño textos*/
+
+/*inicio diseño caracteristicas taller*/
+#ctaller{
+	list-style: none;
+	flex-flow:row wrap;
+	align-items:center;
+	justify-content:center;
+	/*background-color: rgba(232,231,229,0.9);*/
+	padding: 10px 10px;
+	color:#295694;
+	width: 75%;
+	
+
+}
+.puntos{
+	width:195px;
+	height: 130px;
+	margin: 10px 30px;
+	text-align: center;
+	-webkit-box-shadow: inset 5px 6px 10px -3px #4D696F  ;
+	box-shadow: inset 5px 6px 10px -3px #324B50;
+	/*-webkit-box-shadow:0px 2px 5px 3px black;
+	box-shadow:  0px 2px 5px 3px black;*/
+	padding: 15px 10px;
+	background-color: white;
+	border: solid 1px gray;
+}
+.puntos h4{
+	margin: 0.50em;
+}
+.puntos img{
+	width: 50px;
+}
+/*fin diseño caracteristicas taller*/
+/*diseño para las secciones que emergen*/
+.seccionesEsp{
+	position: fixed;
+	display: none;
+	z-index: 13;
+	width: 100%;
+	
+	height: 70%;
+	bottom: 25px;
+	margin-left: 15%;
+	font-family: 'Handlee', cursive;
+	color: white;
+}
+
+
+#mensaje{
+	color: red;
+	display: none;
+	background-color: white;
+	width: 200px;
+	height: 120px;
+	position: fixed;
+	z-index: 20;
+	top:40%;
+	margin: 0 auto;	
+	left: 40%;
+	text-align: center;
+}
+#mensaje h4{
+	margin-top: 50px;
+}
+/*todo lo del formulario*/
+input, textarea, select{
+	border-radius: 25px;
+	border: solid 2px #0b6198;
+	margin: 10px;
+}
+input, select{
+	height: 30px;
+	width: 200px;
+}
+textarea{
+	width: 400px;
+}
+form{
+	max-width: 600px; 
+	width: 90%;
+	margin-left: 15%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow:row wrap;
+	align-items:center;
+	justify-content:center;
+
+
+}
+
+#form h3{
+	font-size: 1.4em;
+	font-weight: normal;
+
+}
+
+::-webkit-input-placeholder, ::-webkit-select-placeholder,::-webkit-textarea-placeholder, select-placeholder{
+   color: #0b6198;
+   padding-left: 10px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #0b6198;  
+   padding-left: 10px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #0b6198;  
+  padding-left: 10px;
+}
+
+:-ms-input-placeholder, :-ms-select-placeholder, ::-ms-textarea-placeholder {  
+   color: #0b6198;
+   padding-left: 10px;
+}
+
+	
+/*fin diseño formulario*/
+/* Seccion quienes somos*/
+#quienes{
+	width: 75%;
+	flex-flow:column nowrap;
+}
+#imagenes{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow:row wrap;
+	align-items:center;
+	justify-content:center;
+}
+
+#imagenes img{
+	width: 130px;
+	margin: 10px;
+}
+#quienes p{
+	font-size: 1.5em;
+	width: 100%;
+	margin: 10px 20px;
+}
+/*diseño testimonios*/
+#testimonios{
+	width: 70%;
+	height: 65%;
+	margin-left: 15%;
+	overflow: hidden;
+	max-width: 1000px;
+}
+#container-testimonios{
+
+	height: 100%;
+	display: flex;
+	flex-flow:row nowrap;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#container-testimonios li{
+	width: 99.8%;
+	margin: 0.1% 1.7%;
+	height: 100%;
+	padding: 5px 40px;	
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.4);
+	overflow-y: auto; 
+	font-size: 1.5em;
+}
+
+
+
+/* fin diseño testimonios*/
+/* fin diseños especiales */
+
+@media screen and (max-width: 1050px) and (min-width: 800px) and (orientation:landscape){
+
+	.seccionesEsp{
+	margin-left: 17%;
+	}
+	#ctaller{
+	overflow: scroll;
+	height: 65%;
+	}
+
+		#quienes{
+		width: 70%;
+	}
+
+}
+
+@media screen and (max-width: 799px) and (orientation:landscape){
+	#informacion{
+		right: 3%;
+	}
+	.escenarios{
+	width: 150%;
+	left: -20%;
+	}
+		#panel8{
+	background-position: left;
+	}
+	article{
+		top:5px;
+		font-size: 0.64em;
+		padding: 1%;
+	}
+
+		#experimentos{
+		top:50px;
+	}
+		.puntos{
+		width: 120px;
+		font-size: 0.7em;
+	}
+
+	.puntos img{
+		width: 50px;
+
+	}
+	.seccionesEsp{
+	margin-left: 2%;
+	height: 69%;
+	width: 90%;
+
+	}
+		#ctaller{
+	width: 100%!important;
+	margin: 0px;
+	overflow: scroll;
+	}
+	#testimonios{
+	width: 100%;
+	margin-left: 0;	
+	}
+
+	#c-contenedor{
+		width: 100%!important;
+	}	
+		#container-testimonios li{
+		font-size: 0.75em;
+		padding: 2px 10px;
+	}
+	
+	#form h3{
+	font-size: 0.9em;
+	}
+	form{
+		margin-left: 2%;
+	}
+	input, textarea, select{
+	margin: 3px;
+	}
+	input, select{
+	height: 25px;
+	}
+	textarea{
+		height: 35px;
+	}
+	#quienes{
+		width: 90%;
+	}
+	#imagenes img{
+		width: 65px;
+		margin: 3px;
+	}
+	#quienes p{
+		font-size: 1em;
+		width: 98%;
+	}
+
+}
+
+@media screen and (max-width: 810px) and (min-width: 600px ) and (orientation:portrait){
+	section{
+	height: 1000px;
+
+	}
+	.escenarios{
+	width: 200%;
+	left: -40%;
+	}
+	#panel8{
+	background-position: left;
+	}
+	article{
+		top: 70px;
+		font-size: 1em
+
+	}
+
+	
+	.seccionesEsp{
+	margin-left: 2%;
+	height: 69%;
+	width: 90%;
+
+	}
+	#ctaller{
+	overflow: scroll;
+	}
+	#quienes{
+		width: 90%;
+	}
+	#testimonios{
+	width: 100%;
+	margin-left: 0;
+	}
+	.puntos{
+		width: 200px;
+		margin: 10px;
+	}
+}
+
+@media screen and (max-width: 599px) and (orientation:portrait){
+	.escenarios{
+	width: 300%;
+	left: -80%;
+	}
+	#panel8{
+		background-position: left;
+	}
+	#informacion{
+		right: 4%;
+	}
+	article{
+		top:35px;
+		font-size: 0.7em;
+		width: 98%;
+	}
+
+	
+	#ctaller{
+	width: 100%!important;
+	margin: 0px;
+	overflow: scroll;
+	}
+	.puntos{
+	width: 120px;
+	height: 130px;
+	margin: 10px;
+	}
+	.puntos h4{
+	margin: 0.30em;
+	font-size: 0.8em;
+	}
+	.puntos img{
+	width: 50px;
+	}
+	#cerrar{
+		top: 1%;
+	}
+	#cerrar img{
+	width: 30px;
+	}
+	.seccionesEsp{
+	margin-left: 2%;
+	height: 69%;
+	width: 90%;
+
+	}
+
+	#form {
+	height: 75%
+	}
+	#form h3{
+	font-size: 0.9em;
+	}
+
+	form{
+		margin-left: 2%;
+	}
+	input, textarea, select{
+	margin: 5px;
+	}
+	input, select{
+	height: 25px;
+	}
+	textarea{
+		height: 35px;
+		width: 200px;
+	}
+	#quienes{
+		width: 90%;
+	}
+	#imagenes img{
+		width: 60px;
+		margin: 8px;
+	}
+	#quienes p{
+		font-size: 1em;
+		width: 98%;
+	}
+	#testimonios{
+	width: 100%;
+	margin-left: 0;
+	}
+	
+	#container-testimonios li{
+		padding: 2px 30px;
+		font-size: 0.8em;
+	}
+
+}

@@ -1,0 +1,96 @@
+@charset "utf-8";
+/*inicio diseño menú*/ 
+#menu-princ{
+	position: fixed;
+	z-index: 15;
+	top: 10px;
+	left: 10px;
+	min-width: 150px;
+	border-radius: 25px;
+	background-color: rgba(255,255,255,0.8);
+	min-height: 290px;
+}
+#cabeza-menu{
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column;
+	align-items:center;
+	margin:15px auto;
+
+}
+#cabeza-menu img{
+	width: 80px;
+}
+#menuitems{
+	list-style: none;
+	font-family: 'Indie Flower';
+	padding-left: 20px;
+}
+
+.items h3{
+	margin: 0.50em;
+	color: #053BA1;
+	cursor: pointer;
+}
+
+.items h3:hover{
+	opacity: 0.6;
+}
+#botonMenu{
+	position: fixed;
+	z-index: 16;
+	top:3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 5px;
+	padding: 3px;
+	color: black;
+	cursor: pointer;
+	display: none;
+}
+#botonMenu img{
+	width: 100%;
+}
+
+
+/*fin diseño menú*/
+@media screen and (max-width: 799px) and (orientation:landscape){
+		#menu-princ{
+		left: -200px;
+	}
+	#cabeza-menu img{
+	width: 60px;
+	}
+	.items h3{
+	margin: 0.15em;
+}
+	#botonMenu{
+		width: 20px;
+		height: 20px;
+		display: block;
+	}
+}
+@media screen and (max-width: 810px) and (min-width: 600px ) and (orientation:portrait){
+	#menu-princ{
+		left: -200px;
+	}
+	#botonMenu{
+		width: 45px;
+		height: 45px;
+		display: block;
+	}
+}
+@media screen and (max-width: 599px) and (orientation:portrait){
+	#menu-princ{
+		left: -200px;
+	}
+	#botonMenu{
+		display: block;
+	}
+}

@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+
+
+#panel1, #panel2, #panel3, #panel4, #panel5{
+	background-image: url("../imagenes/fescenario5678.png");
+
+}
+#panel6{
+	background-image: url("../imagenes/fescenario3.png");
+}
+#panel7{
+	background-image: url("../imagenes/fescenario3.png");
+}
+#panel8{
+	background-image: url("../imagenes/fescenario2.png");
+}
+#panel9{
+	background-image: url("../imagenes/fescenario1.png");
+}
+/*fin diseño secciones*/
+/*inicio diseño elementos de cada escenario*/
+
+#escenario1{
+background-image: url("../imagenes/escenario9.png");
+
+}
+#escenario2{
+background-image: url("../imagenes/escenario8.png");
+}
+#escenario3{
+background-image: url("../imagenes/escenario7.png");
+}
+#escenario4{
+background-image: url("../imagenes/escenario6.png");
+}
+#escenario5{
+background-image: url("../imagenes/escenario5.png");
+}
+#escenario6{
+background-image: url("../imagenes/escenario4.png");
+}
+#escenario7{
+background-image: url("../imagenes/escenario3.png");
+}
+#escenario8{
+background-image: url("../imagenes/escenario2.png");
+background-size: 80%!important;
+}
+#escenario9{
+background-image: url("../imagenes/escenario1.png");
+
+}
+
+
+#escenario8 img{
+	width: 80% !important;
+	opacity: 0.9 !important;
+}
+#escenario9 img{
+	opacity: 1 !important;
+}
+
+/*fin diseño de cada elemento*/
+/* fin diseños especiales */
+

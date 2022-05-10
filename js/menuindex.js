@@ -1,0 +1,41 @@
+$(function(){ 
+	//vinculos
+	
+
+	$("#ins").click(function(){
+		window.open("instituciones.html","_self");
+	});
+	$("#nuevo").click(function(){
+		$("#subMenuNuevos").slideToggle();
+	});
+	$("#bebes").click(function(){
+		window.open("bebes.html","_self");
+	});
+	$("#talleres3-10").click(function(){
+		window.open("nuevos.html","_self");
+	});
+	$("#ent").click(function(){
+		window.open("entrenamiento.html","_self");
+	});
+	$("#taller").click(function(){
+		window.open("nuevos.html?sec=Talleres","_self");
+	});
+	$("#nosotros").click(function(){
+		window.open("nuevos.html?sec=Nosotros","_self");
+	});
+	$("#contacto").click(function(){
+		window.open("nuevos.html?sec=Contacto","_self");
+	});
+	$("#testimonios").click(function(){
+		window.open("nuevos.html?sec=Testimonios","_self");
+	});
+	$("#remind").click(function(){
+		window.open("entrenamiento.html?sec=Remind","_self");
+	});
+	$("#pse").click(function(){
+		window.open("entrenamiento.html?sec=pse","_self");
+	});
+	$("#face").click(function(){
+		window.open("http://www.facebook.com/YoCreoUniendoCorazones","_self");
+	});
+});

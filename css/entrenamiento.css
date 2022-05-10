@@ -1,0 +1,288 @@
+@charset "utf-8";
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body{
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: column nowrap;
+	-moz-flex-flow: column nowrap;
+	-ms-flex-flow: column nowrap;
+	-o-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	margin: 0;
+}
+#paneles{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+.panel{
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+	margin: 0;
+	position: relative;
+}
+
+#nivel1{
+  background: -webkit-linear-gradient(top,#54A0E3,#175387); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top,#54A0E3,#175387); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top,#54A0E3,#175387); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(top,#54A0E3,#175387); /* Standard syntax */
+}
+#nivel2{
+background: -webkit-linear-gradient(top, #D4D144, #8C8A18);
+background: -o-linear-gradient(top, #D4D144, #8C8A18);
+background: -moz-linear-gradient(top, #D4D144, #8C8A18);
+background: linear-gradient(top, #D4D144, #8C8A18); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax */
+}
+#nivel3{
+background: -webkit-linear-gradient(top, #7AF564, #3ECC25);
+background: -o-linear-gradient(top, #7AF564, #3ECC25);
+background: -moz-linear-gradient(top, #7AF564, #3ECC25);
+background: linear-gradient(top, #7AF564, #3ECC25); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax */
+}
+.escenarios{
+	position: absolute;
+	width: 300px;
+	height: 550px;
+	bottom: 0;
+	left: 10%;
+}
+
+.escenarios img{
+	width: 100%;
+	height: 100%;
+}
+
+.informacion{
+	width: 80%;
+	min-height: 450px;
+	height: 90%;
+	margin: 20px;
+	right: 3%;
+	top: 2%;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 25px;
+	position: fixed;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	-moz-flex-flow: column wrap;
+	-ms-flex-flow: column wrap;
+	-o-flex-flow: column wrap;
+	flex-flow: column wrap;
+	align-items:center;
+	font-family: 'Handlee', cursive;
+}
+
+#titulo-remind, #titulo-blogs{
+	max-width: 400px;
+	width: 90%;
+	margin: 10px auto;
+}
+
+#cont-remind, #cont-blogs{
+	width: 100%;
+	margin-top: 20px;
+	height: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
+	align-items:center;
+
+}
+
+.remind-partes, .blogs-partes{
+	width: 50%;
+	margin: 0;
+	padding: 30px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.remind-partes h3{
+	width: 100%;
+}
+.remind-partes img{
+	margin: 20px;
+	cursor: pointer;
+}
+.remind-partes a{
+	color: white;
+}
+#youtube{
+	width: 100%;
+	height: 300px;
+}
+#info2{
+	justify-content: center;
+}
+#info2 h3{
+	max-width: 400px;
+	width: 90%;
+}
+
+#info2 img{
+	cursor: pointer;
+}
+
+#info3 img{
+	border-radius: 25px;
+	cursor: pointer;
+	width: 268px;
+}
+#info3 h3{
+	margin: 40px;
+}
+#contfooter{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	-moz-flex-flow: column wrap;
+	-ms-flex-flow: column wrap;
+	-o-flex-flow: column wrap;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items:center;
+}
+@media screen and (max-width: 1050px) and (min-width: 599px ) and (orientation:portrait){
+	.panel{
+		height: 1400px;
+	}
+
+		.remind-partes, .blogs-partes{
+		width: 100%;
+		padding: 20px;
+	}
+	#youtube {
+	width: 100%;
+	height: 350px;
+	}
+}
+@media screen and (max-width: 799px) and (orientation:landscape){
+		.informacion{
+		margin: 10px;
+		right: auto;
+		width: 95%;
+		top: 5%;
+		min-height: 280px;
+	}
+	#titulo-remind{
+
+	width: 40%;
+	margin: 0 auto;
+
+	}
+		.remind-partes, .blogs-partes{
+		width: 50%;
+		padding: 10px;
+	}
+		.remind-partes h3{
+	font-size: 0.9em;
+	}
+		#cont-remind, #cont-blogs{
+		margin-top: 5px;
+	}
+		#youtube {
+	width: 100%;
+	height: 150px;
+	}
+	.remind-partes img{
+	margin: 3px;
+	width: 90px;
+	}
+	#android{
+		height: 31.4px;
+	}
+	#iphone{
+		height: 33.7px;
+	}
+	#info2 h3{
+		max-width: 500px;
+	}
+	#info2 img{
+	width: 30%;
+	}
+
+	#info3 img{
+	margin: 10px;
+	width: 200px;
+	height: 86.5px;
+	}
+	#info3 h3{
+	margin: 10px;
+	}
+}
+
+@media screen and (max-width: 598px)  and (orientation:portrait) {
+	.informacion{
+		margin: 5px;
+		right: auto;
+		width: 95%;
+		top: 5%;
+	}
+	#cont-remind, #cont-blogs{
+		margin-top: 5px;
+	}
+	.remind-partes, .blogs-partes{
+		width: 100%;
+		padding: 0;
+	}
+	.remind-partes h3{
+	font-size: 0.9em;
+	}
+	#titulo-remind, #titulo-blogs{
+
+	width: 70%;
+
+	}
+	#youtube {
+	width: 100%;
+	height: 190px;
+	}
+	.remind-partes img{
+	margin: 3px;
+	}
+	#info2 img{
+	width: 50%;
+	}
+	#info3 img{
+	margin: 10px;
+	}
+	#info3 h3{
+	margin: 10px;
+	}
+}

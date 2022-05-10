@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>prueba</title>
+	<script src='https://www.google.com/recaptcha/api.js?render=6LcHuYEUAAAAAKwmTQFDqmxasilIH9Bhgx9GZ2Vj'></script>
+	<script type="text/javascript" src="js/captcha.js"></script>
+	<script type="text/javascript" src="js/formularios.js"></script>
+</head>
+<body>
+	<form method="post" action="php/captcha.php " autocomplete="on" id="formContacto">
+			<input type="text" name="nombres" onkeypress="return letras(event)" placeholder=" Nombre" required>
+			<input type="text" name="apellidos" onkeypress="return letras(event)"  placeholder=" Apellidos" required>
+			<input type="email" id="email" name="email"  placeholder=" E-mail" required>
+			<input type="email" id="rep-email" name="rep-email" placeholder=" Repetir E-mail" required onblur="check(this.value)" autocomplete="off">
+			<input type="text" name="celular" onkeypress="return numeros(event)"  placeholder=" Celular" required>
+			<select name="evento" required>
+				<option value="#">Evento</option>
+				<option value="taller">Niños 3- 10</option>
+				<option value="capacitacion">Bebes</option>
+			</select>
+			<textarea name="comentario" required placeHolder="Mensaje" rows="5" cols="30" maxlength="500"></textarea></br>
+			<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+			<input type="submit" value="Enviar"  >
+			<!-- Si se envia el mensaje aparece esta alerta. valida el envio por medio de formularios.js y el captcha se apoya con captcha.js-->
+			<div id="mensaje"><h4>Mensaje Enviado</h4></div>
+		</form>
+</body>
+</html>

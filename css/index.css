@@ -1,0 +1,202 @@
+@charset "utf-8"; 
+
+/*font-family: 'Handlee', cursive;
+	font-family: 'Indie Flower';*/
+html,body{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	-moz-flex-flow: column wrap;
+	-ms-flex-flow: column wrap;
+	-o-flex-flow: column wrap;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items:center;
+	margin: 0 auto;
+	width: 100%;
+}
+body{
+	background-color: #fafafa;
+}
+
+section{
+	width: 80%;
+	
+
+}
+
+/*configuracion general del menu*/
+#menu-princ{
+	border-radius: 80px 80px 25px 25px;
+	border-top: solid 1px gray;	
+	border-bottom: solid 2px gray;
+	background-color: white;
+	justify-content:space-around;
+	align-items:flex-start;
+	position: relative;
+	min-height: 250px;
+	font-family: 'Handlee', cursive;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	list-style: none;
+	padding: 0px;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+
+.categoriaCentral{
+	list-style: none;
+	padding: 0px;
+	width: 280px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: column nowrap;
+	-moz-flex-flow: column nowrap;
+	-ms-flex-flow: column nowrap;
+	-o-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin: 10px 0px 10px 0px;
+}
+.opcionMenu{
+	border-radius: 80px 80px 25px 25px;
+	border-top: solid 1px gray;	
+	background-color: #fafafa;
+	width: 200px;
+	position: relative;
+	min-height: 140px;
+	margin: 10px;
+	cursor: pointer;
+	
+}
+.opcionMenu h2{
+	width: 200px;
+	border-radius: 80px 80px 25px 25px;
+	z-index: 1;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	position:relative;
+	border-top: solid 1px lightgray;	
+	border-bottom: solid 4px lightgray;
+}
+
+.opcionMenu img{
+	width: 170px;	
+	position: relative;
+	z-index: 2;
+	top: 30px;
+	left: 50px;
+}
+
+.subMenu{
+	width: 290px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 10px;
+}
+
+#ins h2{
+background-color: #FCA7BB;
+color: #662665;
+}
+#nuevo h2{
+background-color: #62FA5C;
+color: #2A265E;
+}
+#ent h2{
+background-color: #6CC7F5;
+color: #6E1717;
+}
+/*fin de la configuración general del menu*/
+/*caracteristicas generales de los botones para el submenu*/
+.boton-central{
+
+	margin: 15px;
+	cursor: pointer;
+	width: 110px;
+	height: 70px;
+	
+
+}
+.boton-central h2{
+	min-width: 80px;
+	width: 80%;
+	height: 40px;
+	text-align: center;
+	border-radius: 80px 80px 25px 25px;
+	border-top: solid 1px lightgray;	
+	border-bottom: solid 3px lightgray;
+	font-size: 1em;
+	position: relative;
+	z-index: 1
+}
+.img-boton{
+	width: 65px;
+	height: 58px;
+	margin: 0;
+	background-repeat: no-repeat;
+	-webkit-background-size:  100% 100%;
+	background-size: 100% 100%;
+	position: relative;
+	left: 60px;
+	top: -90px;
+	position: relative;
+	z-index: 2;
+}
+/*fin caracteristicas generales de los botones para el sub menu*/
+/* bebes y talleres*/
+#bebes h2{
+background-color: #eca1cf;
+color: white;
+}
+#imgbebes{
+	background-image: url(../imagenes/iconos-01.png);
+}
+#talleres3-10 h2{
+	background-color: #528ed2;
+	color: #f9f170;
+}
+
+#img-talleres3-10{
+background-image: url(../imagenes/iconos-02.png);
+	-webkit-transform: rotate(30deg);
+	   -moz-transform: rotate(30deg);
+	    -ms-transform: rotate(30deg);
+	     -o-transform: rotate(30deg);
+	        transform: rotate(30deg);
+}
+/*fin bebes y talleres*/
+
+
+@media screen and (max-width: 700px){
+
+	section{
+		width: 90%;
+	}
+	
+	
+}
+@media screen and (max-width: 700px) and (orientation:portrait){
+
+}
