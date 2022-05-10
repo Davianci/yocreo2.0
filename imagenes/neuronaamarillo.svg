@@ -1,0 +1,43 @@
+
+
+
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     width="400"
+   height="390"
+  viewBox="0 0 415 395"
+   id="svg3428"
+   version="1.1"
+   >
+ 
+
+ 
+<defs>
+    <filter id="f2" x="-0.1" y="-0.1" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="6" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+ <g
+    id="layer1"
+  transform="translate(6,-652.36216)"   >
+ 
+ <path
+      id="path3377"
+    d="m 199.93048,669.49424 c 32.679,0 55.776,68.604 82.215,87.813 26.438,19.209 94.898,17.125 104.998,48.206 10.101,31.08 -41.246,63.055 -51.345,94.137 -10.099,31.08 6.274,106.73796 -20.163,125.94496 -26.438,19.21 -82.947,-37.91896 -115.627,-37.91896 -32.681,0 -89.345,57.12896 -115.782997,37.91896 -26.438,-19.207 -2.078,-86.42996 -12.177,-117.50996 -10.099,-31.08 -69.4310001,-71.492 -59.331,-102.573 10.098,-31.081 73.651,-29.719 100.091997,-48.928 26.438,-19.208 54.441,-87.09 87.121,-87.09 z"
+       stroke-miterlimit="10"
+    filter="url(#f2)"     style="fill:#ffffb8;stroke:#ffe97b;stroke-width:11.9769001;stroke-miterlimit:10" />
+   
+ <circle
+      id="circle3379"
+       r="49.577"
+       cy="854.16321"
+       cx="200.29947"
+       style="fill:#fee6ff" />
+ 
+</g>
+</svg>

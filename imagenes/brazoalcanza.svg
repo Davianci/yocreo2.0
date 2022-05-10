@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<svg
+
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+  
+   width="75"
+   height="260"
+   viewBox="0 0 75.000001 260"
+   id="svg3579"
+   version="1.1"
+   preserveAspectRatio="none"
+>
+<defs>
+    <filter id="f2" x="0" y="0" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+  <g
+
+     id="layer1"
+     transform="translate(0,-792.36214)">
+    <path
+      id="path3547"
+       d="m 71.098355,1028.5525 c -1.126,8.681 -24.216,-10.166 -33.507,-10.166 -9.291,0 -30.1450001,18.348 -32.4930001,10.166 -7.707,-26.859 9.5000001,-82.92502 9.5000001,-110.39902 0,-25.776 -14.50000013,-84.434 -9.5000001,-103.351 7.7380001,-4.757 24.2500001,16.25 32.5000001,16.25 8.25,0 25.556,-21.329 33.5,-16.437 0.677,18.438 -8.5,76.943 -8.5,103.568 0,26.625 12.5,79.536 8.5,110.36902 z"
+       style="fill:#ce5ad1"  filter="url(#f2)" />
+
+  </g>
+</svg>
